@@ -8,7 +8,7 @@ define(["jquery"], function ($) {
                 elem.style.borderWidth = "2px"
                 elem.placeholder = "Please, fill in the text field!"                  
             } else {
-                elem.style.borderColor = "inherit"
+                elem.style.borderColor = "silver"
                 elem.style.borderWidth = "1px"
             }
         })
