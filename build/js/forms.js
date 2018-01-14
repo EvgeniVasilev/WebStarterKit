@@ -1,0 +1,1 @@
+define(["jquery"],function(e){"use strict";e(".login").submit(function(t){e(this).find("input.form-input").each(function(e,i){""===i.value?(t.preventDefault(),i.style.borderColor="red",i.style.borderWidth="2px",i.placeholder="Please, fill in the text field!"):(i.style.borderColor="inherit",i.style.borderWidth="1px")})})});
