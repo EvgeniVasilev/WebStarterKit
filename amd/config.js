@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: "../build/js",
+    baseUrl: "build/js",
     paths: {
         main: "main",
         forms: "forms",
