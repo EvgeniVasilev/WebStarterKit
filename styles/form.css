@@ -1,16 +1,7 @@
-.login {
+form {
     display: block;
     width: 400px;
     margin: 50px auto 5px auto;    
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.register{
-    display: block;
-    width: 400px;
-    margin: 50px  auto;    
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -48,17 +39,9 @@ input[type="submit"]:hover{
 }
 
 @media (max-width: 900px){
-    .login{
-        width: 85%;        
-    }
-
-    .register{
-        width: 85%;   
-    };
-
-    .register {
-        width: 50%
-    }
+   form {
+       width: 85%;
+   }
 }
 
 .form-row {

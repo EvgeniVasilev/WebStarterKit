@@ -6,6 +6,19 @@ body {
     padding: 0 0 0 10px;
 }
 
+.images {
+    display: block;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+
+}
+
+.images p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
 a{
     color:rgb(107, 109, 245);
     text-decoration: none;
@@ -75,11 +88,8 @@ footer {
     background-color: rgb(34, 34, 34);
     color: white;
     padding: 20px 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    width: 100%;    
 }
-
 
 footer>span {
     display: block;
