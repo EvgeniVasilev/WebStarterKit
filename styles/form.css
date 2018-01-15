@@ -7,6 +7,10 @@ form {
     padding: 20px;
 }
 
+.login {
+    margin: 50px auto 10px auto !important; 
+} 
+
 .required{
     color: red;
 }
