@@ -6,6 +6,17 @@ body {
     padding: 0 0 0 10px;
 }
 
+a{
+    color:rgb(107, 109, 245);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 nav{
     width: 100%;
     background-color: black;
@@ -18,7 +29,8 @@ nav>a{
 }
 
 nav>a:hover{
-    color: rgb(212, 197, 226);
+    color: rgb(241, 236, 245);
+    text-decoration: none;
 }
 
 nav>a::after{
@@ -69,6 +81,12 @@ footer {
 footer>span {
     display: block;
     padding: 0 0 0 10px;
+}
+
+.register-layer {
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px;
 }
 
 @media (min-width: 900px) {

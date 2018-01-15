@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <title>Login</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
     <link rel="stylesheet" href="./build/css/main.css">
     <link rel="stylesheet" href="./build/css/form.css">
     <script data-main="./amd/config" src="./amd/require.js"></script>
@@ -21,32 +21,48 @@
         <a href="./index.html">Home</a>
         <a href="./login.html">Login</a>
     </nav>
-    <h2 class="header">Login</h2>
+    <h2 class="header">Create Account</h2>
     <hr>
 
-    <form action="" class="login">
+    <form action="" class="register">
         <div class="form-row">
             <label for="userName">User Name:</label>
-            <input type="text" id="userName" name="userName" class="form-input" value="" />
+            <input type="text" id="userName" name="userName"> &nbsp;
+            <span class="required">*</span>
         </div>
 
         <p></p>
 
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> &nbsp;
+            <span class="required">*</span>
+        </div>
+
+        <p></p>
+        
         <div class="form-row">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" class="form-input" />
+            <input type="text" id="password" name="password"> &nbsp;
+            <span class="required">*</span>
+        </div>
+
+        <p></p>
+        
+        <div class="form-row">
+            <label for="rep-password">Repeate Password:</label>
+            <input type="text" id="rep-password" name="rep-password"> &nbsp;
+            <span class="required">*</span>
         </div>
 
         <p></p>
 
         <div class="form-row">
-            <input type="submit" value="Login" />
-        </div>        
+                <input type="submit" value="Register"/>
+        </div>
+        
     </form>
-    <div class="register-layer">
-        <span>You do not have account:</span>&nbsp;
-        <a href="./register.html">Register</a>
-    </div>
+
     <footer>
         <span>
             &copy; MIT LICENSE

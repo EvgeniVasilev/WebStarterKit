@@ -1,5 +1,12 @@
-define([], function () {
+define(["jquery"], function ($) {
   "use strict"
-
-  console.log("Dam good!")
+  var footer = $("footer")
+  var footerHeight = parseInt(footer.css("height"))
+  var windowHeight = parseInt($(window).height())
+  
+  footer.css({
+    position: "absolute",
+    width: "100%",
+    top: (windowHeight - footerHeight) + "px"
+  })  
 })

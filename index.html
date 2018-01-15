@@ -6,6 +6,12 @@
   <meta charset="utf-8">
   <title>Home Page</title>
   <link rel="stylesheet" href="build/css/main.css" />
+  <script data-main="./amd/config" src="./amd/require.js"></script>
+  <script>
+    require(["config"], function () {
+      require(["main"], function () { })
+    })
+  </script>
 </head>
 
 <body>
@@ -58,11 +64,7 @@
       &copy; MIT LICENSE
     </span>
   </footer>
-  <script data-main="./amd/config" src="./amd/require.js"></script>
-  <script>
-    require(["config"], function () {
-      require(["main"], function () { })     
-    })
+
   </script>
 </body>
 
