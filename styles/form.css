@@ -54,6 +54,10 @@ input[type="submit"]:hover{
 
     .register{
         width: 85%;   
+    };
+
+    .register {
+        width: 50%
     }
 }
 

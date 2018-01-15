@@ -75,6 +75,9 @@ footer {
     background-color: rgb(34, 34, 34);
     color: white;
     padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -83,8 +86,19 @@ footer>span {
     padding: 0 0 0 10px;
 }
 
+.pull-right {
+    float: right;
+    content: "|";
+    margin-left: 10px;
+}
+
+a.pull-right::before{
+    content: "|";
+    margin: 10px;
+}
+
 .register-layer {
-    width: 400px;
+    width: 85%;
     margin: 10px auto;
     padding: 20px;
 }
@@ -92,6 +106,12 @@ footer>span {
 @media (min-width: 900px) {
     .container {
         display: flex;
+    }
+
+    .register-layer {
+        width: 400px;
+        margin: 10px auto;
+        padding: 20px;
     }
 }
 

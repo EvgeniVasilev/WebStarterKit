@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="build/css/main.css" />
+    <script data-main="./amd/config" src="./amd/require.js"></script>
+    <script>
+        require(["config"], function () {
+            require(["main"], function () { })
+        })
+    </script>
+</head>
+
+</html>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a class="pull-right" href="./login.html">Login</a>
+        <a href="./galery.html">Galery</a>
+    </nav>
+    <h1 class="header">Galery</h1>
+    <hr/>
+
+
+
+    <footer>
+        <span>
+            &copy; MIT LICENSE
+        </span>
+    </footer>
+</body>
+
+</html>
