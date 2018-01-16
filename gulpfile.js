@@ -33,10 +33,22 @@ gulp.task('responsive', function () {
         width: 800 * 3,
         suffix: '-800-3x',
         height: 350,
-      }],
+      },
+      {
+        width: 324,
+        suffix: '-324',
+        gravity: 'Center',
+      },
+      {
+        width: 680,
+        suffix: '-680', crop: true,
+        gravity: 'Center',
+      },
+      ],
       '*.jpg': [{
-        width: 800,
-        height: 350,
+        width: 950,
+        height: 400,
+        gravity: 'Center',
         crop: true
       }]
     }))
