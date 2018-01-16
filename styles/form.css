@@ -11,10 +11,17 @@ form {
     margin: 50px auto 10px auto !important; 
 } 
 
-.error-mail{
-    border: 1px solid red !important;
+.dirty{    
+    background-color: #f58cb8;
 }
 
+.input{
+    background-color: #ffffff;
+}
+
+.valid{
+    background-color: rgb(111, 238, 149)
+}
 
 .required{
     color: red;
