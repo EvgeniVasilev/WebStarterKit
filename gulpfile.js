@@ -40,8 +40,10 @@ gulp.task('responsive', function () {
         gravity: 'Center',
       },
       {
-        width: 680,
-        suffix: '-680', crop: true,
+        width: 600,
+        height: 300,
+        suffix: '-600',
+        crop: true,
         gravity: 'Center',
       },
       ],
