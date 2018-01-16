@@ -11,6 +11,11 @@ form {
     margin: 50px auto 10px auto !important; 
 } 
 
+.error-mail{
+    border: 1px solid red !important;
+}
+
+
 .required{
     color: red;
 }
