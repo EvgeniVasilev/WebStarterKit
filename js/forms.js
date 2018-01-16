@@ -30,7 +30,7 @@ define(["jquery"], function ($) {
 
     $(".register").submit(function (evt) {
         $(this).find("input.form-input").each(function (i, elem) {
-            if (elem.value === "") {
+            if ($(this).val() === "") {
                 evt.preventDefault()
                 $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
             } else {
