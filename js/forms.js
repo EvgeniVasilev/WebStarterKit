@@ -2,10 +2,11 @@ define(["jquery"], function ($) {
     "use strict"
     $(".login").submit(function (evt) {
         $(this).find("input.form-input").each(function (i, elem) {
-            if (elem.value === "") {
+            if ($(this).val() === "") {
                 evt.preventDefault()
                 $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
             } else {
+                $(this).removeClass("input")
                 $(this).addClass("valid")
             }
 
@@ -14,11 +15,14 @@ define(["jquery"], function ($) {
             })
 
             $(this).blur(function () {
-                if (elem.value !== "")
-                    $(this).css({
-                        border: "1px solid silver",
-                        background: "lightgreen"
-                    })
+                if ($(this).val() !== "") {
+                    $(this).removeClass("input")
+                    $(this).addClass("valid")
+                } else {
+                    $(this).removeClass("valid")
+                    $(this).removeClass("input")
+                    $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
+                }
             })
         })
     })
@@ -30,7 +34,8 @@ define(["jquery"], function ($) {
                 evt.preventDefault()
                 $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
             } else {
-                $(this).addClass("valid")
+                $(this).addClass("valid")  
+                $(this).removeClass("input")             
             }
 
             $(this).focus(function () {
@@ -38,11 +43,14 @@ define(["jquery"], function ($) {
             })
 
             $(this).blur(function () {
-                if (elem.value !== "")
-                    $(this).css({
-                        border: "1px solid silver",
-                        background: "lightgreen"
-                    })
+                if ($(this).val() !== "") {
+                    $(this).removeClass("input")
+                    $(this).addClass("valid")
+                } else {
+                    $(this).removeClass("valid")
+                    $(this).removeClass("input")
+                    $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
+                }
             })
         })
     })
