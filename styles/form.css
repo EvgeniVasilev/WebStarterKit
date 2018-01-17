@@ -1,63 +1,67 @@
 form {
     display: block;
     width: 400px;
-    margin: 50px auto;    
+    margin: 50px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
 }
 
 .login {
-    margin: 50px auto 10px auto !important; 
-} 
+    margin: 50px auto 10px auto !important;
+}
 
-.dirty{    
+.invalid_email {
+    border: 1px solid red  !important;
+}
+
+.dirty {
     background-color: #f58cb8;
 }
 
-.input{
+.input {
     background-color: #ffffff;
 }
 
-.valid{
+.valid {
     background-color: rgb(111, 238, 149)
 }
 
-.required{
+.required {
     color: red;
 }
 
-input[type="text"]{
+input[type="text"] {
     border: 1px solid silver;
     border-radius: 5px;
     height: 25px;
-    padding-left: 5px; 
+    padding-left: 5px;
 }
 
-input[type="password"]{
+input[type="password"] {
     border: 1px solid silver;
     border-radius: 5px;
     height: 25px;
-    padding-left: 5px; 
+    padding-left: 5px;
 }
 
-input[type="submit"]{
-    height: 33px;   
+input[type="submit"] {
+    height: 33px;
     background-color: rgb(184, 12, 12);
     color: white;
     border: 2px solid rgb(184, 12, 12);
-    border-radius: 5px; 
-    cursor: pointer;    
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: rgb(207, 24, 24);
 }
 
-@media (max-width: 900px){
-   form {
-       width: 85%;
-   }
+@media (max-width: 900px) {
+    form {
+        width: 85%;
+    }
 }
 
 .form-row {

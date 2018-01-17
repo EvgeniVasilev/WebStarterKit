@@ -3,7 +3,7 @@ define(["jquery"], function ($) {
 
     function emptyOrNotValidation(parent, child, evt) {
         $(parent).find(child).each(function (i, elem) {
-            if ($(this).val() === "") {
+            if (!$(this).val()) {
                 evt.preventDefault()
                 $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
             } else {
@@ -16,7 +16,7 @@ define(["jquery"], function ($) {
             })
 
             $(this).blur(function () {
-                if ($(this).val() !== "") {
+                if (!$(this).val()) {
                     $(this).removeClass("input")
                     $(this).addClass("valid")
                 } else {
@@ -29,7 +29,30 @@ define(["jquery"], function ($) {
     }
 
     function isValidEmail() {
-        // TODO
+        var e_mailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/,
+            email = $("#email")
+
+        if (email.val() && !email.val().match(e_mailValid)) {
+            email.removeClass("dirty")
+            email.removeClass("input")
+            email.addClass("invalid_email")
+            alert("Please insert a valid email!");
+
+            email.focus(function () {
+                email.removeClass("valid")
+                email.addClass("input")
+            })
+
+        }
+
+        email.blur(function () {
+            if (email.val().match(e_mailValid)) {
+                email.removeClass("input")
+                email.removeClass("invalid_email")
+                email.addClass("valid")
+            }
+        })
+
     }
 
     function validatePasswordRepeat() {
@@ -38,11 +61,12 @@ define(["jquery"], function ($) {
 
 
     $(".login").submit(function (evt) {
-        emptyOrNotValidation(".login", "input.form-input", evt)
+        emptyOrNotValidation($(this), "input.form-input", evt)
     })
 
 
     $(".register").submit(function (evt) {
-        emptyOrNotValidation(".register", "input.form-input", evt)
+        emptyOrNotValidation($(this), "input.form-input", evt)
+        isValidEmail()
     })
 })
