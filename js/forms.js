@@ -3,7 +3,7 @@ define(["jquery"], function ($) {
 
     function emptyOrNotValidation(parent, child, evt) {
         $(parent).find(child).each(function (i, elem) {
-            if (!$(this).val()) {
+            if ($(this).val() === "") {
                 evt.preventDefault()
                 $(this).addClass("dirty").attr("placeholder", "Please fill in some value!")
             } else {
@@ -16,7 +16,7 @@ define(["jquery"], function ($) {
             })
 
             $(this).blur(function () {
-                if (!$(this).val()) {
+                if ($(this).val() !== "") {
                     $(this).removeClass("input")
                     $(this).addClass("valid")
                 } else {
@@ -28,10 +28,11 @@ define(["jquery"], function ($) {
         })
     }
 
-    function isValidEmail() {
+    function isValidEmail(evt) {
         var e_mailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/,
             email = $("#email")
 
+        
         if (email.val() && !email.val().match(e_mailValid)) {
             email.removeClass("dirty")
             email.removeClass("input")
@@ -42,7 +43,7 @@ define(["jquery"], function ($) {
                 email.removeClass("valid")
                 email.addClass("input")
             })
-
+            evt.preventDefault()    
         }
 
         email.blur(function () {
@@ -61,12 +62,12 @@ define(["jquery"], function ($) {
 
 
     $(".login").submit(function (evt) {
-        emptyOrNotValidation($(this), "input.form-input", evt)
+        emptyOrNotValidation(".login", "input.form-input", evt)
     })
 
 
     $(".register").submit(function (evt) {
-        emptyOrNotValidation($(this), "input.form-input", evt)
+        emptyOrNotValidation(".register", "input.form-input", evt)
         isValidEmail()
     })
 })
