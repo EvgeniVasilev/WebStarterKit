@@ -68,6 +68,6 @@ define(["jquery"], function ($) {
 
     $(".register").submit(function (evt) {
         emptyOrNotValidation(".register", "input.form-input", evt)
-        isValidEmail()
+        isValidEmail(evt)
     })
 })
