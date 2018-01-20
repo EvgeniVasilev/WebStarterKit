@@ -107,8 +107,10 @@ define(['jquery'], function ($) {
       if ((isValidPassword) && (password.val() === repeatePassword.val())) {
         repeatePassword.removeClass('bad-value')
         repeatePassword.addClass('valid')
+      } else if ((isValidPassword) && (password.val() !== repeatePassword.val())) {
+        repeatePassword.addClass('bad-value')
       }
-    })
+    })    
   }
 
   $('.login').submit(function (evt) {
