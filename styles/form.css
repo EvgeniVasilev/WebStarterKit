@@ -11,20 +11,23 @@ form {
     margin: 50px auto 10px auto !important;
 }
 
-.invalid_email {
-    border: 1px solid red  !important;
+.bad-value {
+    border: 2px solid #ff276f !important;
 }
 
 .dirty {
-    background-color: #f58cb8;
+    background-color: rgb(233, 218, 218);
+    box-shadow: #ccc 1px 1px 12px;
 }
 
 .input {
-    background-color: #ffffff;
+    background-color: #fff;
+    box-shadow: #ccc 1px 1px 12px;
 }
 
 .valid {
-    background-color: rgb(111, 238, 149)
+    background-color: #c8efdb;
+    box-shadow: #ccc 1px 1px 12px;
 }
 
 .required {
