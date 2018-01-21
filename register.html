@@ -26,42 +26,49 @@
     <hr>
 
     <form action="" class="register">
-        <div class="form-row">
+        <div class="form-row">            
             <label for="userName">User Name:</label>
+            <div class="error-msgs hide">Please fill in field!</div>
             <input type="text" id="userName" name="userName" class="form-input" autocomplete="off"> &nbsp;
             <span class="required">*</span>
         </div>
 
         <p></p>
 
-        <div class="form-row">
+        <div class="form-row">           
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email"  class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs hide">Please fill in field!</div>
+            <input type="text" id="email" name="email" class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs invalid-value-error hide">Please fill in valid email!</div>
             <span class="required">*</span>
         </div>
 
         <p></p>
-        
-        <div class="form-row">
+
+        <div class="form-row">            
             <label for="password">Password:</label>
-            <input type="text" id="password" name="password"  class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs hide">Please fill in field!</div>
+            <input type="text" id="password" name="password" class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs invalid-value-error hide">Must be et least 8 chracters!</div>
             <span class="required">*</span>
         </div>
 
         <p></p>
-        
-        <div class="form-row">
+
+        <div class="form-row">           
             <label for="rep-password">Repeate Password:</label>
-            <input type="text" id="rep-password" name="rep-password"  class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs hide">Please fill in field!</div>
+            <input type="text" id="rep-password" name="rep-password" class="form-input" autocomplete="off"> &nbsp;
+            <div class="error-msgs invalid-value-error hide">Password does not match!</div>
             <span class="required">*</span>
         </div>
 
         <p></p>
 
         <div class="form-row">
-                <input type="submit" value="Register"/>
+            <input type="submit" value="Register" />
         </div>
-        
+
     </form>
 
     <footer>

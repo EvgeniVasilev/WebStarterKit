@@ -35,8 +35,8 @@ gulp.task('responsive', function () {
         height: 350,
       },
       {
-        width: 324,
-        suffix: '-324',
+        width: 300,
+        suffix: '-300',
         gravity: 'Center',
       },
       {
