@@ -5,32 +5,41 @@ define(['jquery'], function ($) {
     $(parent).find(child).each(function (i, elem) {
       if ($(this).val() === '') {
         evt.preventDefault()
-        $(this).addClass('dirty')
+        $(this)
+         .addClass('dirty')
         $(this)
          .prev()
          .removeClass('hide')
          .addClass('show')
       } else {
-        $(this).removeClass('input')
-        $(this).addClass('valid')
+        $(this)
+         .removeClass('input')
+        $(this)
+         .addClass('valid')
       }
 
       $(this).focus(function () {
-        $(this).addClass('input')
+        $(this)
+         .addClass('input')
       })
 
       $(this).blur(function () {
         if ($(this).val() !== '') {
-          $(this).removeClass('input')
-          $(this).addClass('valid')
+          $(this)
+           .removeClass('input')
+          $(this)
+           .addClass('valid')
           $(this)
           .prev()
           .removeClass('show')
           .addClass('hide')
         } else {
-          $(this).removeClass('valid')
-          $(this).removeClass('input')
-          $(this).addClass('dirty')
+          $(this)
+           .removeClass('valid')
+          $(this)
+           .removeClass('input')
+          $(this)
+           .addClass('dirty')
         }
       })
     })
@@ -39,28 +48,32 @@ define(['jquery'], function ($) {
   function isValidEmail (evt) {
     var emailValid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/
     var email = $('#email')
-
     email
      .removeClass('bad-value')
-
     email
          .next()
          .removeClass('show')
          .addClass('hide')
 
     if (email.val() && !email.val().match(emailValid)) {
-      email.removeClass('dirty')
-      email.removeClass('input')
-      email.addClass('bad-value')
+      email
+       .removeClass('dirty')
+      email
+       .removeClass('input')
+      email
+       .addClass('bad-value')
       email
        .next()
        .removeClass('hide')
        .addClass('show')
 
-      email.focus(function () {
-        email.removeClass('valid')
-        email.addClass('input')
-      })
+      email
+       .focus(function () {
+         email
+         .removeClass('valid')
+         email
+          .addClass('input')
+       })
       evt.preventDefault()
     }
 
@@ -83,8 +96,11 @@ define(['jquery'], function ($) {
          .removeClass('show')
          .addClass('hide')
       } else {
-        email.addClass('bad-value')
-        email.next().addClass('show')
+        email
+         .addClass('bad-value')
+        email
+         .next()
+         .addClass('show')
       }
     })
   }
@@ -99,7 +115,8 @@ define(['jquery'], function ($) {
 
     if ((password.val() !== '') &&
      (password.val().length < 8)) {
-      password.addClass('bad-value')
+      password
+       .addClass('bad-value')
       password
        .next()
        .addClass('show')
@@ -110,17 +127,23 @@ define(['jquery'], function ($) {
     }
 
     password.focus(function () {
-      password.removeClass('bad-value')
-      password.removeClass('valid')
-      password.removeClass('dirty')
-      password.addClass('input')
+      password
+       .removeClass('bad-value')
+      password
+       .removeClass('valid')
+      password
+      .removeClass('dirty')
+      password
+       .addClass('input')
     })
 
     password.keyup(function () {
       if ((password.val() !== '') &&
        (password.val().length >= 8)) {
-        password.removeClass('bad-value')
-        password.addClass('valid')
+        password
+         .removeClass('bad-value')
+        password
+         .addClass('valid')
         password
          .prev()
          .removeClass('show')
