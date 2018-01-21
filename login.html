@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="./build/css/main.css">
     <link rel="stylesheet" href="./build/css/form.css">
@@ -28,21 +28,23 @@
     <form action="" class="login">
         <div class="form-row">
             <label for="userName">User Name:</label>
-            <input type="text" id="userName" name="userName" class="form-input" autocomplete="off"/>
+            <div class="error-msgs-login hide">Please fill in field!</div>
+            <input type="text" id="userName" name="userName" class="form-input" autocomplete="off" />
         </div>
 
         <p></p>
 
         <div class="form-row">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" class="form-input" autocomplete="off"/>
+            <div class="error-msgs-login hide">Please fill in field!</div>
+            <input type="password" id="password" name="password" class="form-input" autocomplete="off" />
         </div>
 
         <p></p>
 
         <div class="form-row">
-            <input type="submit" value="Login"/>
-        </div>        
+            <input type="submit" value="Login" />
+        </div>
     </form>
     <div class="register-layer">
         <span>You do not have account:</span>&nbsp;

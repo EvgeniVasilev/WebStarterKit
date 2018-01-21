@@ -16,7 +16,25 @@ define(['jquery'], function ($) {
          .removeClass('input')
         $(this)
          .addClass('valid')
+        $(this)
+         .prev()
+         .removeClass('show')
+         .addClass('hide')
       }
+
+      $(this).keyup(function () {
+        if ($(this).val() === '') {
+          $(this)
+          .prev()
+          .removeClass('hide')
+          .addClass('show')
+        } else {
+          $(this)
+          .prev()
+          .removeClass('show')
+          .addClass('hide')
+        }
+      })
 
       $(this).focus(function () {
         $(this)
@@ -163,7 +181,8 @@ define(['jquery'], function ($) {
       }
     })
     if ((isValidPassword) && (password.val() !== repeatePassword.val())) {
-      repeatePassword.addClass('bad-value')
+      repeatePassword
+       .addClass('bad-value')
       repeatePassword
        .next()
        .removeClass('hide')
