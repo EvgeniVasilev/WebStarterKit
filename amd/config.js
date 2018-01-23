@@ -1,5 +1,6 @@
 requirejs.config({
   paths: {
+    accordion: '../build/js/accordion',
     main: '../build/js/main',
     presence: '../build/js/presence',
     email: '../build/js/email',

@@ -1,1 +1,1 @@
-define(["jquery"],function(e){"use strict";console.log("Works!")});
+define(["jquery","accordion"],function(a,i){"use strict";i.init("./data/faqs.json",".card-head")});

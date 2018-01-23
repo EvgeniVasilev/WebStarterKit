@@ -1,6 +1,5 @@
 define(['jquery'], function ($) {
   'use strict'
-
   return {
     isValidEmail: function (evt) {
       var emailValid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/

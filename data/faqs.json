@@ -1,0 +1,24 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "What is Some Company INC about?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla quod fuga blanditiis repudiandae labore expedita."
+        },
+        {
+            "id": 3,
+            "question": "What is our location?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla quod fuga blanditiis repudiandae labore expedita."
+        },
+        {
+            "id": 5,
+            "question": "Is this the right choice for you?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla quod fuga blanditiis repudiandae labore expedita."
+        },
+        {
+            "id": 5,
+            "question": "What are our services?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla quod fuga blanditiis repudiandae labore expedita."
+        }
+    ]
+}

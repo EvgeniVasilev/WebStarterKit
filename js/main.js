@@ -1,4 +1,4 @@
-define(["jquery"], function ($) {
+define(["jquery", 'accordion'], function ($, accordion) {
   "use strict"
-  console.log("Works!");
+  accordion.init('./data/faqs.json', '.card-head')
 })
