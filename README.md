@@ -1,5 +1,5 @@
-
-#WebStarterKit
+  
+## WebStarterKit
 <p>The repository contains a small web starter project with responsive layout based on flex box.</p>
 
 <p>The project is configured to utilize AMD pattern.</p>
