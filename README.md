@@ -1,18 +1,15 @@
 
 #WebStarterKit
-The repository contains a small web starter project with responsive layout based on flex box.
+<p>The repository contains a small web starter project with responsive layout based on flex box.</p>
 
-The project is configured to utilize AMD pattern.
+<p>The project is configured to utilize AMD pattern.</p>
 
-The project has configured Gulp tasks for JavaScript minification, add prefixes and minifuing css files (all in watch mode), running default system browser (with synch).
+<p>The project has configured Gulp tasks for JavaScript minification, add prefixes and minifuing css files (all in watch mode), running default system browser (with synch).</p>
 
-Development directories are under app folder - styles for css and js for JavaScript.
+<p>Development directories are under app folder - styles for css and js for JavaScript.</p>
 
-Being processed from Gulp the css and JavaScript files are being placed in build folder - /js/some.js and ./css/some.css
+<p>Being processed from Gulp the css and JavaScript files are being placed in build folder - /js/some.js and ./css/some.css</p>
 
-Please note that this is project on go and it does not contain many pages as templates (now it has two pages - Home and Login pages).
-I am intended to enlarge the project (add a few additional pages).
+<p>To use it just copy/clone the repo and open it with VisualStudio Code.</p>
 
-To use it just copy/clone the repo and open it with VisualStudio Code.
-
-You need to have Node and Gulp installed on your machine.
+<p>You need to have Node and Gulp installed on your machine.</p>
